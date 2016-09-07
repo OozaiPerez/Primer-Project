@@ -20,9 +20,9 @@
 
 # Add a content type and a blank line
 echo "X-COMP-490: ${USER}"
-echo "Content-type: text/plain"
+echo "Content-type: text/html"
 echo ""
 
 if [ -n "${QUERY_STRING}" ] ; then
-   cat  ./${QUERY_STRING}
+   bash  ./${QUERY_STRING}
 fi
