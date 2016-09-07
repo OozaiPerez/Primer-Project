@@ -19,10 +19,21 @@
 # SERVER_PORT:       The port of the server.
 
 # Add a content type and a blank line
-echo "X-COMP-490: ${USER}"
-echo "Content-type: text/html"
+echo "Hello Jose, nice to see you!"
+echo "Content-type: text/plain"
+
 echo ""
+echo "Begin"
 
 if [ -n "${QUERY_STRING}" ] ; then
    bash  ./${QUERY_STRING}
 fi
+
+# Read the body -- if it is a post
+while read _post_line ; do
+  echo ${_post_line} ";loop"
+done
+echo $_post_line
+
+
+exit 0
