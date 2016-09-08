@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# This is a little CGI program
+# This is a little CGI program 
 ###################################################################
 # The following are environment variables that are available to you
 #
@@ -19,14 +19,15 @@
 # SERVER_PORT:       The port of the server.
 
 # Add a content type and a blank line
-echo "Content-type: text/plain"
+#content type to use for html files
+echo "Content-type: text/html"
 echo ""
 echo "Hello Jose, nice to see you!"
 echo "User: " ${USER}
 echo "Begin"
 
 if [ -n "${QUERY_STRING}" ] ; then
-   bash  ./${QUERY_STRING}
+   cat  ./${QUERY_STRING}
 fi
 
 # Read the body -- if it is a post

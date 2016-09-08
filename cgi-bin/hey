@@ -1,6 +1,7 @@
-#!/bin/bash
+<!DOCTYPE html>
 
-echo "<html><head><title>Welcome</title></head>"
-echo "<body>"
-echo "Welcome to your Bash CGI!"
-echo "</body></html>"
+<html><head><title>Welcome</title></head>
+<body>
+<h1>Welcome to your Bash CGI!</h1>
+
+</body></html>
