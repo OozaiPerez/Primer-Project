@@ -19,12 +19,11 @@
 # SERVER_PORT:       The port of the server.
 
 # Add a content type and a blank line
-#content type to use for html files
+# Content type to use for html files
 echo "Content-type: text/html"
 echo ""
 echo "Hello Jose, nice to see you!"
-echo "User: " ${USER}
-echo "Begin"
+echo "/nBegin"
 
 if [ -n "${QUERY_STRING}" ] ; then
    cat  ./${QUERY_STRING}

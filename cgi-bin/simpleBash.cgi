@@ -23,7 +23,6 @@
 echo "Content-type: text/plain"
 echo ""
 echo "Hello Jose, nice to see you!"
-echo "User: " ${USER}
 echo "Begin"
 
 if [ -n "${QUERY_STRING}" ] ; then
