@@ -19,10 +19,10 @@
 # SERVER_PORT:       The port of the server.
 
 # Add a content type and a blank line
-echo "Hello Jose, nice to see you!"
 echo "Content-type: text/plain"
-
 echo ""
+echo "Hello Jose, nice to see you!"
+echo "User: " ${USER}
 echo "Begin"
 
 if [ -n "${QUERY_STRING}" ] ; then
