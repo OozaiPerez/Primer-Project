@@ -1,0 +1,3 @@
+#!/bin/bash
+echo"CSUN"
+cat /tmp/csun-jlp70017
