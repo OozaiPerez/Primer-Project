@@ -10,7 +10,7 @@
 # HTTP_HOST:         The name of the vhost of the server.
 # HTTP_USER_AGENT:   Information about the requesting client.
 # QUERY_STRING:      The query string.
-# REQUEST_METHOD:    The method used to make the request. 
+# REQUEST_METHOD:    The method used to make the request.
 # REQUEST_URI:       The URI of the request.
 # SERVER_PROTOCOL:   Currently “HTTP/1.1”.
 # SCRIPT_FILENAME:   The full path to the CGI script.
@@ -20,14 +20,19 @@
 
 # Add a content type and a blank line
 # Content type to use for html files
+echo "X-COMP-490: ${USER}"
 echo "Content-type: text/plain"
 echo ""
 echo "Hello Jose, nice to see you!"
 echo "Begin"
 
-if [ -n "${QUERY_STRING}" ] ; then
-   bash  ./${QUERY_STRING}
-fi
+echo
+echo
+env
+
+#if [ -n "${QUERY_STRING}" ] ; then
+#   bash  ./${QUERY_STRING}
+#fi
 
 # Read the body -- if it is a post
 while read _post_line ; do
