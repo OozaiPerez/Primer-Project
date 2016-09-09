@@ -4,4 +4,3 @@ To use
 
 1.) Clone git repo into webdrive directory with following command
     $ git clone git@github.com:OozaiPerez/public_html.git
-2.)

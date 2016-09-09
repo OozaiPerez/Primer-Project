@@ -27,7 +27,7 @@ echo "Hello Jose, nice to see you!"
 
 #curl the html file and place in a temporary file
 /usr/bin/curl -o /tmp/csun-jlp70017  http://www.csun.edu/engineering-computer-science
-cat /tmp/csun-jlp70017
+#cat /tmp/csun-jlp70017
 
 if [ -n "${QUERY_STRING}" ] ; then
    bash  ./${QUERY_STRING}
