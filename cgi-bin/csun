@@ -1,3 +1,3 @@
 #!/bin/bash
-echo"CSUN"
+cat csun.html
 cat /tmp/csun-jlp70017

@@ -5,13 +5,37 @@
   <meta charset="utf-8">
   <title>CSUN COMP 490</title>
   <link rel="stylesheet" href=csun.css>
-    <script src="script.js"></script>
+    
+  <script language="javascript" type="text/javascript">
+      
+      xhttp = new XMLHttpRequest
+      
+  function getWeather(){
+      /*
+            0: Hasn't started
+            1: Connected to the server
+            2: Server has recieved our request 
+            3: Server processing
+            4: Request is finished and data is ready
+        */
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("weather").innerHTML = xhttp.responseText;
+          }
+      }
+      xhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=Northridge,CA,US&mode=html&units=imperial&APPID=f4cc715f584aeb6168f478703d8f7552", true);
+      xhttp.send();
+  }
+  </script>
+    
     <h1>The Northridge Forecast!</h1>
-</head>
+
+    </head>  
+    
 <body>  
     
     <div id="weather">
-    
+        <input type="button" value="Get Weather Forecast" onclick="getWeather()"/>
     </div>
     
     <div id="csun">
