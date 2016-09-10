@@ -1,5 +1,8 @@
-# Primer-Project
+Primer Project
 Comp 490 Project #1 S.Fitzgerald CSUN Fall 2016
+
+Jose L. Perez
+
 To use
 
 1.) Clone git repo into webdrive directory with following command.
@@ -12,3 +15,4 @@ Notes:
 
 - csun.html is the html doc that displays a simple web page with ajax calls to consume information from remote web servers.
 
+- if given no query string the program will display a little information about itself.
