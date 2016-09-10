@@ -30,6 +30,8 @@ echo "Hello, nice to see you!"
 echo " You are connecting from "${SERVER_NAME}
 echo " With a "${REQUEST_METHOD}" request method"
 echo " Gateway Interface "${GATEWAY_INTERFACE} 
+echo ""
+echo "The URI of the request: " ${REQUEST_URI}
 
 #cat the contents of the query string which will be an html doc 
 if [ -n "${QUERY_STRING}" ] ; then
