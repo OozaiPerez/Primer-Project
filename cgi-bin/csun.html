@@ -27,13 +27,6 @@
       xhttp.send();
   }
 function getCsun(){
-      /*
-            0: Hasn't started
-            1: Connected to the server
-            2: Server has recieved our request 
-            3: Server processing
-            4: Request is finished and data is ready
-        */
       csun.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             document.getElementById("csun").innerHTML = csun.responseText;
@@ -44,18 +37,18 @@ function getCsun(){
   }
   </script>
     
-    <h1>The Northridge Forecast!</h1>
+    <h1 id="myhead">The Northridge Forecast!</h1>
 
     </head>  
     
 <body>  
     
     <div id="weather">
-        <input type="button" value="Get Weather Forecast" onclick="getWeather()"/>
+        <input type="button" class="button" value="Get Weather Forecast" onclick="getWeather()"/>
     </div>
     
     <div id="csun">
-        <input type="button" value="Get CSUN" onclick="getCsun()"/>
+        <input type="button" class="button" value="Get CSUN" onclick="getCsun()"/>
 
     </div>
     

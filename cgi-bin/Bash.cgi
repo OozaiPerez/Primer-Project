@@ -25,15 +25,13 @@ echo "X-COMP-490: ${USER}"
 echo "Content-type: text/html"
 echo ""
 
-#Little greeting message
+#Little greeting message with environment info
 echo "Hello, nice to see you!"
 echo " You are connecting from "${SERVER_NAME}
 echo " With a "${REQUEST_METHOD}" request method"
 echo " Gateway Interface "${GATEWAY_INTERFACE} 
 
-#curl the html file and place in a temporary file
-#/usr/bin/curl -o /tmp/csun-jlp70017  http://www.csun.edu/engineering-computer-science
-
+#cat the contents of the query string which will be an html doc 
 if [ -n "${QUERY_STRING}" ] ; then
    cat  ./${QUERY_STRING}
 fi

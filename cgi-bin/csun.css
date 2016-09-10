@@ -1,8 +1,17 @@
-csunP{
-    font: serif;
-    font-size: 20px;
+#myhead{
     color: crimson;
+    font-family:serif;
+    font-size: 52px;
+        
 }
-h1{
-    color: blue;
+.button{
+    background-color: crimson;
+    padding: 20px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 36px;
+    color: white;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
 }
